@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+body {
+  font-family: 'Roboto Condensed';
+  line-height: 1.6;
+  margin: auto;
+  background-color: #7AB547;
+}
+
+#title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.icon {
+  height: 40px;
+  width: auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  border-radius: 2rem;
+  height: 10px;
+  margin: 0 20px 0 0;
+}
+
+nav ul li a:hover {
+  background-color: cyan;
+}
+
+.container #survey-form #name-label, .container #survey-form #email-label, .container #survey-form #number-label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+
+.container {
+  background-color: palegreen;
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+}
+
+.container #survey-form {
+  text-align: center;
+}
+
+#description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-input {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+#submit {
+  width: 80%;
+  padding: 0.25rem;
+  background: cyan;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.radio-input {
+  display: inline-block;
+}
+
+.radio-label {
+  display: inline-block;
+}
+/*# sourceMappingURL=input.css.map */

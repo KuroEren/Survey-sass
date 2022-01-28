@@ -1,0 +1,68 @@
+%labels {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+%radio {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    background-color: palegreen;
+    padding: 2.5rem;
+    border-radius: 10px;
+    width: 400px;
+    margin:auto;
+
+
+#survey-form {
+    text-align: center;
+    
+    #name-label {
+        @extend %labels;
+    }
+
+    #email-label {
+        @extend %labels;
+    }
+
+    #number-label {
+        @extend %labels;
+    }
+}
+
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+}
+
+.form-input {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+#submit {
+    width: 80%;
+    padding: 0.25rem;
+    background: cyan;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.radio-input {
+    display: inline-block;
+}
+
+.radio-label {
+    @extend radio;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="SASS/input.css">
+    <link rel="icon" href="https://www.systex.com.hk/images/Nvidia/nvidia2.png">
+</head>
+<body>
+    <!--NAV-->
+    <nav>
+        <img class="icon" src="https://www.systex.com.hk/images/Nvidia/nvidia2.png">
+        <ul>
+            <li><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/">Products</a></li>
+            <li><a href="https://www.nvidia.com/en-us/ai-data-science/">Solutions</a></li>
+            <li><a href="https://www.nvidia.com/Download/index.aspx?lang=en-us">Drivers</a></li>
+            <li><a href="https://www.nvidia.com/en-us/support/">Support</a></li>
+        </ul>
+    </nav>
+
+    <header><h1 id="title">Nvidia</h1></header>
+    <section class="container">
+    <form id="survey-form">
+
+        <p id="description">Quality GPUs</p>
+
+        <label for="name" id="name-label"> <b>Name</b> </label>
+        <input type="text" name="name" id="name" class="form-input" placeholder="Juan Dela Cruz" required> </input>
+        <br>
+
+        <label for="email" id="email-label"> <b>Email</b> </label>
+        <input type="text" name="email" id="email" class="form-input" placeholder="juandelacruz@yahoo.com" required> </input>
+        <br>
+
+        <label for="number" id="number-label"> <b>Age</b> </label>
+        <input type="number" id="number" name="number" class="form-input" placeholder="18" min="18" max="105" required> </input>
+        <br>
+        <br>
+
+        <label for="dropdown" id="model" ><b>Model</b> </label>
+        <select id="dropdown">
+            <option value="RTX_3090"> Geforce RTX 3090 </option>
+            <option value="RTX_3080"> Geforce RTX 3080 </option>
+            <option value="RTX_3070"> Geforce RTX 3070 </option>
+            <option value="RTX_3060_Ti"> Geforce RTX 3060 Ti </option>
+            <option value="RTX_3060"> Geforce RTX 3060 </option>
+        </select> 
+        <br>
+
+        <label for="gpu_make" id="gpu_make"> <b>GPU Make:</b> </label>
+        <br> 
+
+        <div class="all-radio">
+        <input id="gpu_make" type="radio" id="asus" name="make" value="asus" class="radio-input">
+        <label for="gpu_make" class="radio-label"> Asus </label>
+        <br>
+
+        <input id="gpu_make" type="radio" id="msi" name="make" value="msi" class="radio-input">
+        <label for="gpu_make" class="radio-label"> MSI </label>
+        <br>
+
+        <input id="gpu_make" type="radio" id="gigabyte" name="make" value="gigabyte" class="radio-input">
+        <label for="gpu_make" class="radio-label"> Gigabyte </label>
+        <br>
+
+        <input id="gpu_make" type="radio" id="evga" name="make" value="evga" class="radio-input">
+        <label for="gpu_make" class="radio-label"> EVGA </label>
+        <br>
+
+        <input id="gpu_make" type="radio" id="zotac" name="make" value="zotac" class="radio-input">
+        <label for="gpu_make" class="radio-label"> Zotac </label>
+        <br>
+
+        <input id="gpu_make" type="radio" id="pny" name="make" value="pny" class="radio-input">
+        <label for="gpu_make" class="radio-label"> PNY </label>
+        <br>
+        </div>
+
+        <label for="cpus"> <b>Additional parts:</b> </label>
+        <br>
+
+        <input type="checkbox" id="checkbox" name="parts" value="ram">
+        <label for="checkbox"> RAM </label>
+        <br>
+
+        <input type="checkbox" id="checkbox" name="parts" value="cpu">
+        <label for="checkbox"> CPU </label>
+        <br>
+
+        <input type="checkbox" id="checkbox" name="parts" value="psu">
+        <label for="checkbox"> PSU </label>
+        <br>
+
+        <input type="checkbox" id="checkbox" name="parts" value="SSD">
+        <label for="checkbox"> SSD </label>
+        <br>
+
+        <input type="checkbox" id="checkbox" name="parts" value="HDD">
+        <label for="checkbox"> HDD </label>
+        <br>
+        <br>
+
+        <label id="textarea"> Additional Comments</label>
+        <br>
+        <textarea id="textarea" name="addcomm" rows="5" cols="38">
+        </textarea>
+        <br>
+
+        <button type="submit" id="submit" name="submit">Place Order</button>
+    </form>
+    </section>
+</body>
+</html>
